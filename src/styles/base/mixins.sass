@@ -1,0 +1,15 @@
+@mixin container
+    max-width: $full
+    margin: $center
+    @media (max-width: #{$l})
+      max-width: $mobile
+      margin: $center
+
+@mixin section-height
+    height: $section-height
+
+@mixin section-vert-padding
+    padding: 17 * $base-width 0
+
+
+

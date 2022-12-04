@@ -1,12 +1,24 @@
+// Import required assets and packages
 import * as React from "react";
+import "../styles/main.sass";
 
-// Styles
-import "../styles/main.scss";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 
+// Init Components
 const IndexPage = () => {
-  return <main>foo</main>;
+  return (
+    <>
+      <Header />
+      <Layout pageTitle={"Webdesigner & Front-End Entwickler"}></Layout>
+      <Footer />
+    </>
+  );
 };
 
-export default IndexPage;
+// Export Title to Head
+export const Head = () => <title>Jason S. | Front-End Developer</title>;
 
-export const Head = () => <title>BikeRider Live</title>;
+// export Component
+export default IndexPage;
