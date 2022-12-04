@@ -1,14 +1,16 @@
 // Import required assets and packages
 import * as React from "react";
 
-// Init Components
+import Footer from "./globals/footer";
+import Header from "./globals/header";
 
+// Init Components
 const Layout = ({ children }) => {
   return (
     <main>
-      <span>foo</span>
-
+      <Header />
       {children}
+      <Footer />
     </main>
   );
 };
