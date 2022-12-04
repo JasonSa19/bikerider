@@ -1,6 +1,6 @@
 // Import required assets and packages
 import * as React from "react";
-import "../styles/main.sass";
+import "../styles/main.scss";
 
 import Layout from "../components/Layout";
 
@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <>
-      <Layout pageTitle={"Webdesigner & Front-End Entwickler"}></Layout>
+      <Layout pageTitle={"BikeRider Live - Shop"}></Layout>
     </>
   );
 };
