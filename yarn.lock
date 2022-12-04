@@ -5021,6 +5021,17 @@
     "objectFitPolyfill" "^2.3.5"
     "prop-types" "^15.8.1"
 
+"gatsby-plugin-manifest@^5.2.0":
+  "integrity" "sha512-epiBVvWg81n1zRezeVC1ZXQR2vBqrp+122ptK71uEQ61d4hoLqguJbcr8SvJYnMC2NSx4za8tO44kGtxQZkdaQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.2.0.tgz"
+  "version" "5.2.0"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "gatsby-core-utils" "^4.2.0"
+    "gatsby-plugin-utils" "^4.2.0"
+    "semver" "^7.3.7"
+    "sharp" "^0.30.7"
+
 "gatsby-plugin-page-creator@^5.0.0":
   "integrity" "sha512-9+fuXl4Ucgh/QY5odsTMNT7EsZ8rfPvSq/YN7Sb0OOiul66he9ecv63EeXzDLmeqsiAEBwFOVbBaIWphGI0Aew=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-5.0.0.tgz"
