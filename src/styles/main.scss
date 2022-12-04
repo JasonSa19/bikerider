@@ -1,0 +1,17 @@
+// Base Files
+@import "base/base";
+@import "base/fonts.scss";
+@import "base/mixins";
+@import "base/vars";
+
+// layout parts
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/typo";
+
+// components
+@import "components/button";
+
+// sections
+@import "sections/hero";
