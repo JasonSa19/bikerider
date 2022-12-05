@@ -1,0 +1,33 @@
+header {
+  @include container;
+  position: absolute;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  top: 7.5rem;
+  left: 50%;
+  z-index: 999;
+
+  .header-wrap {
+    @include flex-row;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-wrap {
+      @include flex-row;
+      align-items: center;
+      gap: 2rem;
+      .logo {
+        width: 16rem;
+      }
+      .seperator {
+        height: 4rem;
+        width: 0.2rem;
+        background: $light;
+      }
+      .login {
+        width: 4rem;
+      }
+    }
+  }
+}

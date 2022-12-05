@@ -9,7 +9,18 @@ $tertiary: #706f6f;
 
 $font-color: $secondary;
 
+$light: #fff;
+$dark: #000;
+
 // Widths
 
-$max: 1200px;
-$boxed: 1160px;
+$max: 2560px;
+$boxed: 1720px;
+
+// Breakpoints
+
+$s: 450px;
+$m: 680px;
+$l: 900px;
+$xl: 1200px;
+$xxl: 1480px;

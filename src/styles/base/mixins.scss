@@ -1,0 +1,27 @@
+// general container
+
+@mixin container {
+  max-width: $boxed;
+  margin: 0 auto;
+  @media screen and (max-width: $xxl) {
+    max-width: 90%;
+  }
+}
+
+// Flex-Mixins
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// absolute tweaks
+
+@mixin transform-middle {
+  transform: translate(-50%, -50%);
+}
