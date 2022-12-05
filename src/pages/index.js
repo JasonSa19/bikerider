@@ -2,13 +2,15 @@
 import * as React from "react";
 import "../styles/main.scss";
 
-import Layout from "../components/Layout";
+import Header from "../components/globals/header";
+import Footer from "../components/globals/footer";
 
 // Init Components
 const IndexPage = () => {
   return (
     <>
-      <Layout pageTitle={"BikeRider Live - Shop"}></Layout>
+      <Header />
+      <Footer />
     </>
   );
 };
