@@ -1,4 +1,5 @@
 .hamburger-toggler {
+  cursor: pointer;
   width: 5.5rem;
   height: 3.3rem;
   background-color: transparent;
@@ -9,5 +10,25 @@
   &-line {
     height: 0.3rem;
     background-color: $light;
+    transition: $transition;
+  }
+}
+
+// When toggle is active
+
+.nav-toggler {
+  .hamburger-toggler {
+    &-line {
+      &.middle {
+        opacity: 0;
+        transition: $transition;
+      }
+      &.outer-up {
+        transform: translateY(13px) rotate(-45deg);
+      }
+      &.outer-down {
+        transform: translateY(-15px) rotate(45deg);
+      }
+    }
   }
 }

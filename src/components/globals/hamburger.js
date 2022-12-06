@@ -11,9 +11,9 @@ const Hamburger = () => {
   return (
     <div className={!isActive ? "nav-toggler" : null}>
       <button onClick={handleToggle} className="hamburger-toggler">
-        <div className="hamburger-toggler-line"></div>
-        <div className="hamburger-toggler-line"></div>
-        <div className="hamburger-toggler-line"></div>
+        <div className="hamburger-toggler-line outer-up"></div>
+        <div className="hamburger-toggler-line middle"></div>
+        <div className="hamburger-toggler-line outer-down"></div>
       </button>
     </div>
   );
