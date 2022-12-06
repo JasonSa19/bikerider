@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-anchor-links`,
+    "react-flexible-sliding-menu",
     {
       resolve: "gatsby-plugin-manifest",
       options: { icon: "src/images/favicon.png" },
