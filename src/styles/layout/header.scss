@@ -6,6 +6,9 @@ header {
   top: 7.5rem;
   left: 50%;
   z-index: 999;
+  @media screen and (max-width: $m) {
+    top: 4.5rem;
+  }
 
   .header-wrap {
     @include flex-row;
@@ -17,14 +20,20 @@ header {
       @include flex-row;
       align-items: center;
       gap: 2rem;
+
       .logo {
         width: 16rem;
+        @media screen and (max-width: $m) {
+          width: 10rem;
+        }
       }
+
       .seperator {
         height: 4rem;
         width: 0.2rem;
         background: $light;
       }
+
       .login {
         width: 4rem;
       }

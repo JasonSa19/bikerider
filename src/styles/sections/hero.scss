@@ -7,10 +7,15 @@
 
     .hero-image {
       height: 100%;
+      @media screen and (max-width: $xxl) {
+        height: 100vh;
+      }
+
       img {
         filter: grayscale(100) brightness(0.6);
       }
     }
+
     .text-wrap {
       width: 100%;
       position: absolute;
