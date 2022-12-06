@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-import { useContext } from "react";
-import { MenuContext } from "react-flexible-sliding-menu";
+// import { useContext } from "react";
+// import { MenuContext } from "react-flexible-sliding-menu";
 
 import Hamburger from "hamburger-react";
 import { StaticImage } from "gatsby-plugin-image";
@@ -10,18 +10,13 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
-  const { toggleMenu } = useContext(MenuContext);
+  // const { toggleMenu } = useContext(MenuContext);
 
   return (
     <header>
       <div className="header-wrap">
         <div className="menu-toggler">
-          <Hamburger
-            size={40}
-            color="#fff"
-            toggled={isOpen}
-            toggle={toggleMenu}
-          />
+          <Hamburger size={40} color="#fff" toggled={isOpen} toggle={setOpen} />
         </div>
 
         <div className="logo-wrap">
