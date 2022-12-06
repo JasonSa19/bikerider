@@ -1,8 +1,11 @@
 import React from "react";
+import { useContext } from "react";
+import { MenuContext } from "react-flexible-sliding-menu";
 
 const Hamburger = () => {
+  const { toggleMenu } = useContext(MenuContext);
   return (
-    <button o className="hamburger-toggler">
+    <button onClick={toggleMenu} className="hamburger-toggler">
       <div className="hamburger-toggler-line"></div>
       <div className="hamburger-toggler-line"></div>
       <div className="hamburger-toggler-line"></div>
