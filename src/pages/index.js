@@ -15,7 +15,7 @@ import Menu from "../components/globals/menu";
 const IndexPage = () => {
   return (
     <>
-      <MenuProvider MenuComponent={Menu}>
+      <MenuProvider width="100%" MenuComponent={Menu}>
         <Header />
         <Hero />
         <Footer />
