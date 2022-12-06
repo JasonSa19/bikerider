@@ -8,8 +8,6 @@ import Footer from "../components/globals/footer";
 
 // Import Menu Components
 
-// import Menu from "../components/globals/menu";
-
 // Init Components
 const IndexPage = () => {
   return (

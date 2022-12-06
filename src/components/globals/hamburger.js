@@ -2,7 +2,7 @@ import React from "react";
 
 const Hamburger = () => {
   return (
-    <button className="hamburger-toggler">
+    <button o className="hamburger-toggler">
       <div className="hamburger-toggler-line"></div>
       <div className="hamburger-toggler-line"></div>
       <div className="hamburger-toggler-line"></div>
