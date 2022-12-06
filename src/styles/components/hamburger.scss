@@ -1,0 +1,13 @@
+.hamburger-toggler {
+  width: 5.5rem;
+  height: 3.3rem;
+  background-color: transparent;
+  border: none;
+  @include flex-column;
+  justify-content: space-between;
+
+  &-line {
+    height: 0.3rem;
+    background-color: $light;
+  }
+}

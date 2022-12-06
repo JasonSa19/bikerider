@@ -6,8 +6,6 @@ import Header from "../components/globals/header";
 import Hero from "../components/globals/hero";
 import Footer from "../components/globals/footer";
 
-// Import Menu Components
-
 // Init Components
 const IndexPage = () => {
   return (
