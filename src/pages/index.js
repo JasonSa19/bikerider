@@ -8,18 +8,15 @@ import Footer from "../components/globals/footer";
 
 // Import Menu Components
 
-import MenuProvider from "react-flexible-sliding-menu";
-import Menu from "../components/globals/menu";
+// import Menu from "../components/globals/menu";
 
 // Init Components
 const IndexPage = () => {
   return (
     <>
-      <MenuProvider width="100%" MenuComponent={Menu}>
-        <Header />
-        <Hero />
-        <Footer />
-      </MenuProvider>
+      <Header />
+      <Hero />
+      <Footer />
     </>
   );
 };
