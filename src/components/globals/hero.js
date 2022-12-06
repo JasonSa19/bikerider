@@ -5,7 +5,10 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="content-wrap">
-        <StaticImage src="../../images/layout/Cross.jpg"></StaticImage>
+        <StaticImage
+          class="hero-image"
+          src="../../images/layout/Cross.jpg"
+        ></StaticImage>
 
         <div className="text-wrap">
           <div className="text-wrap_inner">
