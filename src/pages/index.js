@@ -6,13 +6,20 @@ import Header from "../components/globals/header";
 import Hero from "../components/globals/hero";
 import Footer from "../components/globals/footer";
 
+// Import Menu Components
+
+import MenuProvider from "react-flexible-sliding-menu";
+import Menu from "../components/globals/menu";
+
 // Init Components
 const IndexPage = () => {
   return (
     <>
-      <Header />
-      <Hero />
-      <Footer />
+      <MenuProvider MenuComponent={Menu}>
+        <Header />
+        <Hero />
+        <Footer />
+      </MenuProvider>
     </>
   );
 };
