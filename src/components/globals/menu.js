@@ -2,7 +2,7 @@ import React from "react";
 
 const Menu = () => {
   return (
-    <div>
+    <nav>
       <a className="menu-item" href="/">
         Home
       </a>
@@ -15,7 +15,7 @@ const Menu = () => {
       <a className="menu-item" href="/desserts">
         Desserts
       </a>
-    </div>
+    </nav>
   );
 };
 

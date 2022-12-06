@@ -5,9 +5,12 @@ import Hamburger from "./hamburger";
 import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
+import Menu from "./menu";
+
 const Header = () => {
   return (
     <header>
+      <Menu />
       <div className="header-wrap">
         <div className="menu-toggler">
           <Hamburger />
