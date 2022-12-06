@@ -1,3 +1,21 @@
 body {
   font-family: $main-font;
 }
+
+h1,
+.h1 {
+  font-size: 8.5rem;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  color: $light;
+  margin: 0;
+}
+
+h2,
+.h2 {
+  font-size: 6.5rem;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0;
+}

@@ -1,7 +1,32 @@
 .hero {
-  .image-wrap {
+  max-height: 108rem;
+
+  .content-wrap {
+    position: relative;
+    max-height: 108rem;
+
     img {
       filter: grayscale(100) brightness(0.7);
+    }
+
+    .text-wrap {
+      width: 100%;
+      position: absolute;
+      top: 24%;
+
+      &_inner {
+        @include container;
+        h1 {
+          span {
+            color: $primary;
+          }
+        }
+
+        h2 {
+          color: $light;
+          font-weight: 300;
+        }
+      }
     }
   }
 }

@@ -3,6 +3,6 @@ html {
 }
 
 body {
-  background: grey;
-  margin: 0;
+  max-width: $max;
+  margin: 0 auto;
 }

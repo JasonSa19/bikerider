@@ -8,8 +8,6 @@ import Footer from "../components/globals/footer";
 
 // Init Components
 const IndexPage = () => {
-  const indexImg = "../../images/layout/Cross.jpg";
-
   return (
     <>
       <Header />
