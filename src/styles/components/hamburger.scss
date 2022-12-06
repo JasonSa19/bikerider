@@ -19,13 +19,17 @@
 .nav-toggler {
   .hamburger-toggler {
     &-line {
+      background: $dark;
+
       &.middle {
         opacity: 0;
         transition: $transition;
       }
+
       &.outer-up {
         transform: translateY(13px) rotate(-45deg);
       }
+
       &.outer-down {
         transform: translateY(-15px) rotate(45deg);
       }
