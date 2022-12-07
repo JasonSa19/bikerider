@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="text-wrap">
           <div className="text-wrap_inner">
             <h1>
-              Ein Motorrrad
+              Ein Motorrad
               <br />
               <span>–</span>
             </h1>

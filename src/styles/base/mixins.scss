@@ -3,7 +3,7 @@
 @mixin container {
   max-width: $boxed;
   margin: 0 auto;
-  @media screen and (max-width: $xxl) {
+  @media screen and (max-width: $xxxl) {
     max-width: 90%;
   }
 }
@@ -37,4 +37,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+// Image Filter
+
+@mixin filter {
+  filter: grayscale(100) brightness(0.6);
 }

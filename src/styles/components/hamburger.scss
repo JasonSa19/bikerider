@@ -21,6 +21,9 @@
   .hamburger-toggler {
     &-line {
       background: $dark;
+      @media screen and (max-width: $xxl) {
+        background-color: $light;
+      }
 
       &.middle {
         opacity: 0;

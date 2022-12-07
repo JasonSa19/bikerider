@@ -21,6 +21,7 @@ header {
         @include flex-row;
         align-items: center;
         gap: 2rem;
+        z-index: 999;
 
         .logo {
           width: 16rem;

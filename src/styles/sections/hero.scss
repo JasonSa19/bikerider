@@ -12,7 +12,7 @@
       }
 
       img {
-        filter: grayscale(100) brightness(0.6);
+        @include filter;
       }
     }
 

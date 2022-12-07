@@ -5,8 +5,94 @@ nav {
   background-color: $light;
   transform: translateX(-115%);
   transition: $transition;
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: $xxl) {
+    background-color: $secondary;
+  }
 
   &.nav-open {
     transform: translateX(0%);
+  }
+  .menu-wrapper {
+    @include container;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20rem;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $font-color;
+      transition: $transition;
+
+      &:hover {
+        color: $primary;
+      }
+      @media screen and (max-width: $xxl) {
+        color: $light;
+      }
+    }
+
+    .primary-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 4.8rem;
+
+      a {
+        font-size: 4rem;
+
+        @media screen and (max-width: $l) {
+          font-size: 3.4rem;
+        }
+        @media screen and (max-width: $m) {
+          font-size: 2.8rem;
+        }
+      }
+    }
+    .secondary-menu {
+      a {
+        font-size: 3rem;
+
+        @media screen and (max-width: $l) {
+          font-size: 2.6rem;
+        }
+        @media screen and (max-width: $m) {
+          font-size: 1.8rem;
+        }
+
+        &:first-of-type {
+          margin-right: 5rem;
+        }
+      }
+    }
+  }
+  .gallery-menu-wrap {
+    position: absolute;
+    top: 8rem;
+    right: 0;
+    width: 40%;
+
+    .menu-image {
+      @include filter;
+      max-height: 35.5rem;
+      margin-bottom: 0.4rem;
+
+      img {
+        object-position: top;
+      }
+
+      &:last-of-type {
+        img {
+          object-position: center;
+        }
+      }
+    }
+    @media screen and (max-width: $xxl) {
+      display: none;
+    }
   }
 }
