@@ -1,41 +1,43 @@
 header {
-  @include container;
   position: absolute;
+  left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
-  top: 7.5rem;
-  left: 50%;
   z-index: 999;
-  @media screen and (max-width: $m) {
-    top: 4.5rem;
-  }
 
-  .header-wrap {
-    @include flex-row;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    .logo-wrap {
+  .header-outer-wrap {
+    @include container;
+    margin-top: 12rem;
+    @media screen and (max-width: $m) {
+      margin-top: 8rem;
+    }
+    .header-wrap {
       @include flex-row;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      gap: 2rem;
 
-      .logo {
-        width: 16rem;
-        @media screen and (max-width: $m) {
-          width: 10rem;
+      .logo-wrap {
+        @include flex-row;
+        align-items: center;
+        gap: 2rem;
+
+        .logo {
+          width: 16rem;
+          @media screen and (max-width: $m) {
+            width: 10rem;
+          }
         }
-      }
 
-      .seperator {
-        height: 4rem;
-        width: 0.2rem;
-        background: $light;
-      }
+        .seperator {
+          height: 4rem;
+          width: 0.2rem;
+          background: $light;
+        }
 
-      .login {
-        width: 4rem;
+        .login {
+          width: 4rem;
+        }
       }
     }
   }
