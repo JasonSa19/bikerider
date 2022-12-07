@@ -1,6 +1,6 @@
 import React from "react";
 
-import Hamburger from "./hamburger";
+import { useState } from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
@@ -8,13 +8,24 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Menu from "./menu";
 
 const Header = () => {
+  const [isActive, setActive] = useState("false");
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
   return (
     <header>
-      <Menu />
+      <Menu className={!isActive ? "nav-open" : null} />
       <div className="header-outer-wrap">
         <div className="header-wrap">
           <div className="menu-toggler">
-            <Hamburger />
+            <div className={!isActive ? "nav-toggler" : null}>
+              <button onClick={handleToggle} className="hamburger-toggler">
+                <div className="hamburger-toggler-line outer-up"></div>
+                <div className="hamburger-toggler-line middle"></div>
+                <div className="hamburger-toggler-line outer-down"></div>
+              </button>
+            </div>
           </div>
           <div className="logo-wrap">
             <AnchorLink to="/">

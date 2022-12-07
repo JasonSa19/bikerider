@@ -1,9 +1,9 @@
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import React from "react";
 
-const Menu = () => {
+const Menu = ({ className }) => {
   return (
-    <nav>
+    <nav className={className}>
       <AnchorLink className="menu-item" to="#leistungen">
         Leistungen
       </AnchorLink>
