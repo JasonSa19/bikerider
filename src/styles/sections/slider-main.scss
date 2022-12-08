@@ -1,16 +1,19 @@
 .slider-main {
   @include vertical-space;
   background-color: $secondary;
+
   .headline-wrap {
     @include flex-column;
     justify-content: center;
     align-items: center;
+
     h3 {
       color: $light;
     }
   }
   .slider-wrap {
     @include container;
+
     .slick-list {
       .slick-slide {
         .slider-item {
@@ -23,5 +26,27 @@
         }
       }
     }
+  }
+  button.slick-arrow {
+    height: 4rem;
+    width: 4rem;
+    &::before {
+      display: none;
+    }
+    img {
+      height: 4rem;
+      transition: $transition;
+    }
+    &:hover {
+      img {
+        transform: scale(1.15);
+      }
+    }
+  }
+  .slick-prev {
+    left: -6rem;
+  }
+  .slick-next {
+    right: -6rem;
   }
 }

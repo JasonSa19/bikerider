@@ -20,8 +20,8 @@ import tourImage from "../../images/layout/tour.jpg";
 import trainingImage from "../../images/layout/Sportmotorrad.jpg";
 
 //Custom Arrows
-import arrowPrev from "../../images/layout/next.svg";
-import arrowNext from "../../images/layout/prev.svg";
+import arrowPrev from "../../images/layout/prev.svg";
+import arrowNext from "../../images/layout/next.svg";
 
 function NextArrow(props) {
   const { className, onClick } = props;
