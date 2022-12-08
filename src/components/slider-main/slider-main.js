@@ -19,6 +19,28 @@ import tuvImage from "../../images/layout/lackierung.jpg";
 import tourImage from "../../images/layout/tour.jpg";
 import trainingImage from "../../images/layout/Sportmotorrad.jpg";
 
+//Custom Arrows
+import arrowPrev from "../../images/layout/next.svg";
+import arrowNext from "../../images/layout/prev.svg";
+
+function NextArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <button onClick={onClick} className={className}>
+      <img alt="Nächster Slide" src={arrowNext}></img>
+    </button>
+  );
+}
+
+function PrevArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <button onClick={onClick} className={className}>
+      <img alt="Vorheriger Slide" src={arrowPrev}></img>
+    </button>
+  );
+}
+
 const Slidermain = () => {
   var settings = {
     dots: false,
@@ -27,6 +49,8 @@ const Slidermain = () => {
     speed: 700,
     slidesToShow: 4,
     slidesToScroll: 4,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
