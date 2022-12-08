@@ -12,8 +12,10 @@
       height: 0.3rem;
       background-color: $primary;
       width: 70%;
-      margin: 0 auto;
       margin-top: 1rem;
+    }
+    &.center-line {
+      margin: 0 auto;
     }
   }
 }

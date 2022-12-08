@@ -4,8 +4,13 @@ import "../styles/main.scss";
 
 import Header from "../components/globals/header";
 import Hero from "../components/globals/hero";
+import TextMedia from "../components/text-media/text-media";
 import Slidermain from "../components/slider-main/slider-main";
 import Footer from "../components/globals/footer";
+
+// Data for Text-Media
+
+import mediaImage from "../images/layout/Sportmotorrad.jpg";
 
 // Init Components
 const IndexPage = () => {
@@ -13,6 +18,13 @@ const IndexPage = () => {
     <>
       <Header />
       <Hero />
+      <TextMedia
+        mediaImage={mediaImage}
+        mediaImageAlt="Sportmotorrad"
+        textContent="BikeRider Live ist der Motorrad-Shop für Sie. Wir vertreiben Motorräder aller Marken und machen aus Ihrer
+                    Maschine einen unverwechselbaren Traum aus Chrom. "
+        hlContent="Freiheit, Dynamik, Fahrspass"
+      />
       <Slidermain />
       <Footer />
     </>

@@ -1,0 +1,12 @@
+.text-media {
+  @include vertical-space;
+  .text-media-wrap {
+    display: flex;
+    .media {
+      flex: 0 0 50%;
+      img {
+        width: 87rem;
+      }
+    }
+  }
+}

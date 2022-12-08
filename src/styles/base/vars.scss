@@ -42,3 +42,7 @@ $gradient: linear-gradient(
   rgba(37, 38, 39, 0.2889749649859944) 65%,
   rgba(37, 38, 39, 0) 100%
 );
+
+// Color Filter
+
+$filter: url("#red-sunset") saturate(0.9) contrast(1.4) brightness(0.8);
