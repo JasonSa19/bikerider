@@ -1,0 +1,55 @@
+footer {
+  .footer-wrap {
+    @include container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 29rem;
+    font-size: 1.8rem;
+
+    strong {
+      font-weight: 500;
+    }
+    p,
+    span,
+    a {
+      font-weight: 300;
+    }
+
+    h4 {
+      margin-bottom: 4.4rem;
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 12.5rem;
+
+      .footer-contact-right {
+        .contact-link {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: nowrap;
+
+          svg {
+            width: 2.6rem;
+            height: 2.6rem;
+            fill: $primary;
+          }
+
+          a {
+            color: $font-color;
+            text-decoration: none;
+            transition: $transition;
+
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
