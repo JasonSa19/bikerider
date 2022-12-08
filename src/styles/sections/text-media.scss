@@ -1,12 +1,17 @@
 .text-media {
+  @include container;
   @include vertical-space;
   .text-media-wrap {
     display: flex;
     .media {
       flex: 0 0 50%;
       img {
-        width: 87rem;
+        width: 100%;
       }
+    }
+    .text {
+      padding: 11rem;
+      padding-right: 7rem;
     }
   }
 }
