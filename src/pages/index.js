@@ -11,6 +11,7 @@ import Footer from "../components/globals/footer";
 // Data for Text-Media
 
 import mediaImage from "../images/layout/Sportmotorrad.jpg";
+import mediaImageFilter from "../images/layout/Sportmotorrad_filter.jpg";
 
 // Init Components
 const IndexPage = () => {
@@ -20,7 +21,9 @@ const IndexPage = () => {
       <Hero />
       <TextMedia
         mediaImage={mediaImage}
+        mediaImageFilter={mediaImageFilter}
         mediaImageAlt="Sportmotorrad"
+        mediaImageFilterAlt="Sportmotorrad"
         textContent="BikeRider Live ist der Motorrad-Shop für Sie. Wir vertreiben Motorräder aller Marken und machen aus Ihrer
                     Maschine einen unverwechselbaren Traum aus Chrom. "
         hlContent="Freiheit, Dynamik, Fahrspass"

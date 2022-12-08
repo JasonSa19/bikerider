@@ -1,12 +1,24 @@
 import React from "react";
 import Headline from "../headline";
 
-const TextMedia = ({ mediaImage, mediaImageAlt, textContent, hlContent }) => {
+const TextMedia = ({
+  mediaImage,
+  mediaImageFilter,
+  mediaImageFilterAlt,
+  mediaImageAlt,
+  textContent,
+  hlContent,
+}) => {
   return (
     <section className="text-media">
       <div className="text-media-wrap">
         <div className="media">
-          <img alt={mediaImageAlt} src={mediaImage} />
+          <img
+            class="background-image"
+            alt={mediaImageFilterAlt}
+            src={mediaImageFilter}
+          />
+          <img class="foreground-image" alt={mediaImageAlt} src={mediaImage} />
         </div>
         <div className="text">
           <Headline headlineContent={hlContent} />
