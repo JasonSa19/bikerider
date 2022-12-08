@@ -1,10 +1,9 @@
-import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 
-const SlidermainItem = ({ content, image }) => {
+const SlidermainItem = ({ content, image, imageAlt }) => {
   return (
     <div className="slider-item">
-      <GatsbyImage src={image}></GatsbyImage>
+      <img alt={imageAlt} src={image}></img>
       <div className="slider-item-text">{content}</div>
     </div>
   );
