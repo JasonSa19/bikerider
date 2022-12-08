@@ -22,6 +22,7 @@ import trainingImage from "../../images/layout/Sportmotorrad.jpg";
 //Custom Arrows
 import arrowPrev from "../../images/layout/prev.svg";
 import arrowNext from "../../images/layout/next.svg";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 function NextArrow(props) {
   const { className, onClick } = props;
@@ -159,20 +160,24 @@ const Slidermain = () => {
               imageAlt="TÜV/Sonderabnahmen"
             />
           </div>
-          <div className="outer-item">
-            <SlidermainItem
-              content="Touren"
-              image={tourImage}
-              imageAlt="Touren"
-            />
-          </div>
-          <div className="outer-item">
-            <SlidermainItem
-              content="Trainings"
-              image={trainingImage}
-              imageAlt="Trainings"
-            />
-          </div>
+          <AnchorLink to="/trainings">
+            <div className="outer-item">
+              <SlidermainItem
+                content="Touren"
+                image={tourImage}
+                imageAlt="Touren"
+              />
+            </div>
+          </AnchorLink>
+          <AnchorLink to="/trainings">
+            <div className="outer-item">
+              <SlidermainItem
+                content="Trainings"
+                image={trainingImage}
+                imageAlt="Trainings"
+              />
+            </div>
+          </AnchorLink>
         </Slider>
       </div>
     </section>
