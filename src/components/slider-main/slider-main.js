@@ -16,7 +16,7 @@ import motorImage from "../../images/layout/umbauten.jpg";
 import zentrierImage from "../../images/layout/lenker.jpg";
 import serviceImage from "../../images/layout/metall.jpg";
 import tuvImage from "../../images/layout/lackierung.jpg";
-import tourImage from "../../images/layout/tour.jpg";
+import tourImage from "../../images/layout/Tourer.jpg";
 import trainingImage from "../../images/layout/Sportmotorrad.jpg";
 
 //Custom Arrows

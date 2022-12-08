@@ -10,7 +10,7 @@ const TextMedia = ({ mediaImage, mediaImageAlt, textContent, hlContent }) => {
         </div>
         <div className="text">
           <Headline headlineContent={hlContent} />
-          {textContent}
+          <p>{textContent}</p>
         </div>
       </div>
     </section>
