@@ -1,0 +1,19 @@
+.headline-wrap {
+  margin-bottom: 7rem;
+  @media screen and (max-width: $xl) {
+    margin-bottom: 3.5rem;
+  }
+  &-inner {
+    display: inline;
+    h3 {
+      display: inline;
+    }
+    .custom-underline {
+      height: 0.3rem;
+      background-color: $primary;
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+  }
+}

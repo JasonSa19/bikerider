@@ -1,10 +1,12 @@
 import React from "react";
 
-const Headline = ({ content }) => {
+const Headline = ({ headlineContent }) => {
   return (
     <div className="headline-wrap">
-      <h3>{content}</h3>
-      <div className="custom-underline"></div>
+      <div className="headline-wrap-inner">
+        <h3>{headlineContent}</h3>
+        <div className="custom-underline"></div>
+      </div>
     </div>
   );
 };

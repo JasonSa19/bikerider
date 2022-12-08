@@ -8,6 +8,15 @@
   }
 }
 
+// spacing
+
+@mixin vertical-space {
+  padding: 12rem 0;
+  @media screen and (max-width: $xl) {
+    padding: 6rem 0;
+  }
+}
+
 // Flex-Mixins
 
 @mixin flex-row {
