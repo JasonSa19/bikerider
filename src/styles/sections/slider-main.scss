@@ -1,0 +1,11 @@
+.slider-main {
+  background-color: $secondary;
+  .slider-wrap {
+    @include container;
+    .slick-list {
+      .slider-item {
+        height: 50rem;
+      }
+    }
+  }
+}

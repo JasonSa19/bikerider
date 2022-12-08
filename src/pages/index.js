@@ -4,6 +4,7 @@ import "../styles/main.scss";
 
 import Header from "../components/globals/header";
 import Hero from "../components/globals/hero";
+import Slidermain from "../components/slider-main/slider-main";
 import Footer from "../components/globals/footer";
 
 // Init Components
@@ -12,6 +13,7 @@ const IndexPage = () => {
     <>
       <Header />
       <Hero />
+      <Slidermain />
       <Footer />
     </>
   );
