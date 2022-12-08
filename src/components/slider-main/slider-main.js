@@ -8,6 +8,16 @@ import umbauImage from "../../images/layout/umbauten.jpg";
 import verchromImage from "../../images/layout/verchromen.jpg";
 import strahlenImage from "../../images/layout/lenker.jpg";
 import polierImage from "../../images/layout/polierarbeiten.jpg";
+import lackierImage from "../../images/layout/lackierung.jpg";
+import metallImage from "../../images/layout/metall.jpg";
+import teileImage from "../../images/layout/teile.jpg";
+import inspectImage from "../../images/layout/inspektion.jpg";
+import motorImage from "../../images/layout/umbauten.jpg";
+import zentrierImage from "../../images/layout/lenker.jpg";
+import serviceImage from "../../images/layout/metall.jpg";
+import tuvImage from "../../images/layout/lackierung.jpg";
+import tourImage from "../../images/layout/tour.jpg";
+import trainingImage from "../../images/layout/Sportmotorrad.jpg";
 
 const Slidermain = () => {
   var settings = {
@@ -56,29 +66,59 @@ const Slidermain = () => {
             imageAlt="Glas- und Sandstrahlen"
           />
           <SlidermainItem
-            content="Polierarbeiten"
-            image={polierImage}
-            imageAlt="Polierarbeiten"
-          />
-          <SlidermainItem
-            content="Motorrad-Umbauten (Customizing)"
-            image={umbauImage}
-            imageAlt="Umbauten"
-          />
-          <SlidermainItem
-            content="Verchromen"
-            image={verchromImage}
-            imageAlt="Verchromen"
-          />
-          <SlidermainItem
-            content="Glas- und Sandstrahlen"
-            image={strahlenImage}
-            imageAlt="Glas- und Sandstrahlen"
+            content="Sonderlackierungen"
+            image={lackierImage}
+            imageAlt="Sonderlackierungen"
           />
           <SlidermainItem
             content="Polierarbeiten"
             image={polierImage}
             imageAlt="Polierarbeiten"
+          />
+          <SlidermainItem
+            content="Metallarbeiten"
+            image={metallImage}
+            imageAlt="Metallarbeiten"
+          />
+          <SlidermainItem
+            content="Weltweite Teilebeschaffung (Versand)"
+            image={teileImage}
+            imageAlt="Weltweite Teilebeschaffung"
+          />
+          <SlidermainItem
+            content="Inspektionen"
+            image={inspectImage}
+            imageAlt="Inspektionen"
+          />
+          <SlidermainItem
+            content="Motorinstandsetzung"
+            image={motorImage}
+            imageAlt="Motorinstandsetzung"
+          />
+          <SlidermainItem
+            content="Einspeichen und Zentrieren"
+            image={zentrierImage}
+            imageAlt="Einspeichen und Zentrieren"
+          />
+          <SlidermainItem
+            content="Hol-/Bringservice"
+            image={serviceImage}
+            imageAlt="Hol-/Bringservice"
+          />
+          <SlidermainItem
+            content="TÜV/Sonderabnahmen"
+            image={tuvImage}
+            imageAlt="TÜV/Sonderabnahmen"
+          />
+          <SlidermainItem
+            content="Touren"
+            image={tourImage}
+            imageAlt="Touren"
+          />
+          <SlidermainItem
+            content="Trainings"
+            image={trainingImage}
+            imageAlt="Trainings"
           />
         </Slider>
       </div>
