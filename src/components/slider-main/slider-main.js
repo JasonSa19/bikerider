@@ -49,6 +49,7 @@ const Slidermain = () => {
     speed: 700,
     slidesToShow: 4,
     slidesToScroll: 4,
+    centerPadding: 30,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -74,76 +75,104 @@ const Slidermain = () => {
       <Headline headlineContent="Leistungen" />
       <div className="slider-wrap">
         <Slider {...settings}>
-          <SlidermainItem
-            content="Motorrad-Umbauten (Customizing)"
-            image={umbauImage}
-            imageAlt="Umbauten"
-          />
-          <SlidermainItem
-            content="Verchromen"
-            image={verchromImage}
-            imageAlt="Verchromen"
-          />
-          <SlidermainItem
-            content="Glas- und Sandstrahlen"
-            image={strahlenImage}
-            imageAlt="Glas- und Sandstrahlen"
-          />
-          <SlidermainItem
-            content="Sonderlackierungen"
-            image={lackierImage}
-            imageAlt="Sonderlackierungen"
-          />
-          <SlidermainItem
-            content="Polierarbeiten"
-            image={polierImage}
-            imageAlt="Polierarbeiten"
-          />
-          <SlidermainItem
-            content="Metallarbeiten"
-            image={metallImage}
-            imageAlt="Metallarbeiten"
-          />
-          <SlidermainItem
-            content="Weltweite Teilebeschaffung (Versand)"
-            image={teileImage}
-            imageAlt="Weltweite Teilebeschaffung"
-          />
-          <SlidermainItem
-            content="Inspektionen"
-            image={inspectImage}
-            imageAlt="Inspektionen"
-          />
-          <SlidermainItem
-            content="Motorinstandsetzung"
-            image={motorImage}
-            imageAlt="Motorinstandsetzung"
-          />
-          <SlidermainItem
-            content="Einspeichen und Zentrieren"
-            image={zentrierImage}
-            imageAlt="Einspeichen und Zentrieren"
-          />
-          <SlidermainItem
-            content="Hol-/Bringservice"
-            image={serviceImage}
-            imageAlt="Hol-/Bringservice"
-          />
-          <SlidermainItem
-            content="TÜV/Sonderabnahmen"
-            image={tuvImage}
-            imageAlt="TÜV/Sonderabnahmen"
-          />
-          <SlidermainItem
-            content="Touren"
-            image={tourImage}
-            imageAlt="Touren"
-          />
-          <SlidermainItem
-            content="Trainings"
-            image={trainingImage}
-            imageAlt="Trainings"
-          />
+          <div className="outer-item">
+            <SlidermainItem
+              content="Motorrad-Umbauten (Customizing)"
+              image={umbauImage}
+              imageAlt="Umbauten"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Verchromen"
+              image={verchromImage}
+              imageAlt="Verchromen"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Glas- und Sandstrahlen"
+              image={strahlenImage}
+              imageAlt="Glas- und Sandstrahlen"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Sonderlackierungen"
+              image={lackierImage}
+              imageAlt="Sonderlackierungen"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Polierarbeiten"
+              image={polierImage}
+              imageAlt="Polierarbeiten"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Metallarbeiten"
+              image={metallImage}
+              imageAlt="Metallarbeiten"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Weltweite Teilebeschaffung (Versand)"
+              image={teileImage}
+              imageAlt="Weltweite Teilebeschaffung"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Inspektionen"
+              image={inspectImage}
+              imageAlt="Inspektionen"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Motorinstandsetzung"
+              image={motorImage}
+              imageAlt="Motorinstandsetzung"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Einspeichen und Zentrieren"
+              image={zentrierImage}
+              imageAlt="Einspeichen und Zentrieren"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Hol-/Bringservice"
+              image={serviceImage}
+              imageAlt="Hol-/Bringservice"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="TÜV/Sonderabnahmen"
+              image={tuvImage}
+              imageAlt="TÜV/Sonderabnahmen"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Touren"
+              image={tourImage}
+              imageAlt="Touren"
+            />
+          </div>
+          <div className="outer-item">
+            <SlidermainItem
+              content="Trainings"
+              image={trainingImage}
+              imageAlt="Trainings"
+            />
+          </div>
         </Slider>
       </div>
     </section>

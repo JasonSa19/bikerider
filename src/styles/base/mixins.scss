@@ -1,5 +1,10 @@
 // general container
 
+@mixin outer-container {
+  max-width: $max;
+  margin: 0 auto;
+}
+
 @mixin container {
   max-width: $boxed;
   margin: 0 auto;
