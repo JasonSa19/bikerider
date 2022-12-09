@@ -8,7 +8,7 @@ const SliderSubItem = ({ imageAlt, image, meet, date }) => {
       </div>
       <div className="meet-wrap">
         <div className="meet-date">{date}</div>
-        <p>{meet}</p>
+        <div className="meet-name">{meet}</div>
       </div>
     </div>
   );

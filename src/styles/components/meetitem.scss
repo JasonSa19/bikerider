@@ -4,6 +4,8 @@
     height: 21rem;
     width: 52rem;
     position: relative;
+    margin: 0 auto;
+
     img {
       width: 100%;
       height: 100%;
@@ -11,6 +13,39 @@
       z-index: -1;
       display: block;
       position: relative;
+    }
+  }
+  .meet-wrap {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -5rem;
+
+    .meet-date {
+      padding: 1.2rem 0;
+      width: 23.5rem;
+      font-weight: 600;
+      color: $light;
+      background-color: $primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: -2.5rem;
+      z-index: 999;
+      position: relative;
+    }
+
+    .meet-name {
+      background-color: $light;
+      padding: 0rem 6.4rem;
+      padding-top: 2.5rem;
+      height: 10.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
   }
 }
