@@ -12,7 +12,12 @@ const Header = () => {
 
   const handleToggle = () => {
     setActive(!isActive);
+    let body = document.getElementsByTagName("body")[0];
+
+    if (isActive) body.style.overflow = "hidden";
+    else body.style.overflow = "auto";
   };
+
   return (
     <header>
       <Menu className={!isActive ? "nav-open" : null} />
