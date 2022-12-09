@@ -44,28 +44,6 @@
       }
     }
   }
-  button.slick-arrow {
-    height: 4rem;
-    width: 4rem;
-    &::before {
-      display: none;
-    }
-    img {
-      height: 4rem;
-      transition: $transition;
-    }
-    &:hover {
-      img {
-        transform: scale(1.15);
-      }
-    }
-  }
-  .slick-prev {
-    left: -6rem;
-  }
-  .slick-next {
-    right: -6rem;
-  }
   .outer-item > div {
     margin-right: 3rem;
   }
@@ -74,4 +52,27 @@
       margin-right: 0;
     }
   }
+}
+
+button.slick-arrow {
+  height: 4rem;
+  width: 4rem;
+  &::before {
+    display: none;
+  }
+  img {
+    height: 4rem;
+    transition: $transition;
+  }
+  &:hover {
+    img {
+      transform: scale(1.15);
+    }
+  }
+}
+.slick-prev {
+  left: -6rem;
+}
+.slick-next {
+  right: -6rem;
 }
