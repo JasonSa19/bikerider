@@ -2,6 +2,7 @@ import React from "react";
 import Headline from "../headline";
 
 const TextMedia = ({
+  direction,
   mediaImage,
   mediaImageFilter,
   mediaImageFilterAlt,
@@ -11,7 +12,7 @@ const TextMedia = ({
 }) => {
   return (
     <section className="text-media">
-      <div className="text-media-wrap">
+      <div className={direction + " text-media-wrap"}>
         <div className="media">
           <img
             class="background-image"

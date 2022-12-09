@@ -20,6 +20,7 @@ const IndexPage = () => {
       <Header />
       <Hero />
       <TextMedia
+        direction="image-left"
         mediaImage={mediaImage}
         mediaImageFilter={mediaImageFilter}
         mediaImageAlt="Sportmotorrad"

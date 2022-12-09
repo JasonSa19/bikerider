@@ -3,6 +3,21 @@
   @include vertical-space;
   .text-media-wrap {
     display: flex;
+    &.image-left {
+      flex-direction: row;
+      .foreground-image {
+        left: 4rem;
+      }
+    }
+    &.image-right {
+      flex-direction: row-reverse;
+      .foreground-image {
+        right: 4rem;
+      }
+      .text {
+        padding-left: 0;
+      }
+    }
     .media {
       flex: 0 0 50%;
       position: relative;
@@ -10,13 +25,8 @@
         width: 100%;
       }
       .foreground-image {
-        z-index: 1;
-        left: 4rem;
         top: 4rem;
         position: absolute;
-      }
-      .background-image {
-        z-index: 1;
       }
     }
     .text {
