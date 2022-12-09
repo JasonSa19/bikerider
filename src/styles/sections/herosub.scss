@@ -19,10 +19,11 @@
   &-text {
     position: absolute;
     width: 100%;
-    top: 14%;
-    @media screen and (max-width: $xxl) {
+    top: 25rem;
+    @media screen and (max-width: $xxxl) {
       top: 15rem;
     }
+
     &-inner {
       @include container;
     }

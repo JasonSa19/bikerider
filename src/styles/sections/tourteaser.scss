@@ -1,18 +1,30 @@
 .tour-teaser-section {
   @include vertical-space;
+  @include inner-container;
+  @media screen and (max-width: $xl) {
+    padding-bottom: 15rem;
+  }
   .headline-wrap {
     @include flex-column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    @media screen and (max-width: $xl) {
+      margin-bottom: 12rem;
+    }
   }
   .tour-teaser-wrap {
     display: flex;
     flex-direction: column;
     gap: 12rem;
 
+    @media screen and (max-width: $xl) {
+      gap: 20rem;
+    }
+
     .tour-teaser-inner {
       position: relative;
-      width: 110rem;
       height: 23rem;
       margin: 0 auto;
       .date {
@@ -25,6 +37,9 @@
         font-weight: 600;
         font-size: 2rem;
         padding: 1.2rem 2.3rem;
+        @media screen and (max-width: $xl) {
+          font-size: 1.6rem;
+        }
       }
       .tour-media {
         @include flex-row;
@@ -32,6 +47,11 @@
         align-items: center;
         box-shadow: $shadow;
         height: 100%;
+        overflow: hidden;
+
+        @media screen and (max-width: $xl) {
+          @include flex-column;
+        }
         .tour-media-text {
           @include flex-column;
           gap: 1rem;
@@ -40,14 +60,30 @@
             text-transform: uppercase;
             font-weight: 600;
           }
+          @media screen and (max-width: $xl) {
+            padding: 2rem;
+            padding-top: 4rem;
+            margin: 0;
+          }
         }
         img {
           flex: 0 0 60%;
           object-fit: cover;
           object-position: center;
           height: 100%;
+          width: 100%;
         }
       }
+    }
+  }
+  .tour-teaser {
+    &:hover {
+      .tour-media-image {
+        transform: scale(1.05);
+      }
+    }
+    .tour-media-image {
+      transition: $transition;
     }
   }
 }

@@ -13,6 +13,13 @@
   }
 }
 
+@mixin inner-container {
+  max-width: $min;
+  margin: 0 auto;
+  @media screen and (max-width: $xxxl) {
+    max-width: 80%;
+  }
+}
 // spacing
 
 @mixin vertical-space {
