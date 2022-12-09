@@ -25,6 +25,10 @@
     &.image-right {
       flex-direction: row-reverse;
 
+      .text {
+        padding-right: 29rem;
+      }
+
       @media screen and (max-width: $l) {
         flex-direction: column-reverse;
         .text {
