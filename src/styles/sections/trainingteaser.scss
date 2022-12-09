@@ -1,0 +1,42 @@
+.training-teaser {
+  background-color: $secondary;
+  z-index: -2;
+  position: relative;
+  @include vertical-space;
+  .headline-wrap {
+    &-inner {
+      @include flex-column;
+      .custom-underline {
+        width: 15%;
+      }
+      h3 {
+        color: $light;
+        text-align: center;
+      }
+    }
+  }
+  .training-teaser-wrap {
+    @include inner-container;
+    @include flex-row;
+    row-gap: 7rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .meet-sub-item {
+      flex: 0 0 50%;
+      @media screen and (max-width: $xl) {
+        flex: 0 0 100%;
+      }
+      &-img {
+        img {
+          z-index: -1;
+          object-position: 100% 36%;
+        }
+        @media screen and (max-width: $m) {
+          height: 18rem;
+          width: 30rem;
+        }
+      }
+    }
+  }
+}

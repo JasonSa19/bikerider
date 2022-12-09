@@ -4,7 +4,7 @@ import Headline from "../components/headline";
 const Text = ({ text, cstmClass, hlContent }) => {
   return (
     <section className="text">
-      <Headline cstmClass={cstmClass} headline={hlContent} />
+      <Headline cstmClass={cstmClass} headlineContent={hlContent} />
       <p>{text}</p>
     </section>
   );

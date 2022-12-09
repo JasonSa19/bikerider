@@ -1,0 +1,13 @@
+.text {
+  @include container;
+  @include vertical-space;
+  .headline-wrap {
+    margin-bottom: 4rem;
+  }
+  p {
+    width: 67%;
+    @media screen and (max-width: $xxl) {
+      width: 100%;
+    }
+  }
+}
