@@ -1,0 +1,24 @@
+.hero-subpage {
+  height: 50vh;
+  &-wrap {
+    height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      @include filter;
+    }
+  }
+  &-text {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    @media screen and (max-width: $xxl) {
+      top: 15rem;
+    }
+    &-inner {
+      @include container;
+    }
+  }
+}
