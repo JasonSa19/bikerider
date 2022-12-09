@@ -1,0 +1,8 @@
+.subpage-slider {
+  background-color: $secondary;
+
+  &-wrap {
+    @include container;
+    @include vertical-space;
+  }
+}

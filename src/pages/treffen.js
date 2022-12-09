@@ -10,6 +10,7 @@ import TextMedia from "../components/text-media/text-media";
 import image from "../images/layout/treffen.jpg";
 import mediaImage from "../images/layout/treffen_alternative.jpg";
 import mediaImageFilter from "../images/layout/treffen_alternative_filter.jpg";
+import SliderSub from "../components/slider-subpage/slidersub";
 
 const Treffen = () => {
   return (
@@ -30,6 +31,7 @@ const Treffen = () => {
         hlContent="Come together."
         cstmClass="smaller-line"
       />
+      <SliderSub />
       <Footer />
     </>
   );

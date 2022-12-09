@@ -35,6 +35,9 @@ nav {
       @media screen and (max-width: $xxl) {
         color: $light;
       }
+      &[aria-current="page"] {
+        color: $primary;
+      }
     }
 
     .primary-menu {

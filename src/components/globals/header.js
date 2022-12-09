@@ -12,10 +12,20 @@ const Header = () => {
 
   const handleToggle = () => {
     setActive(!isActive);
-    let body = document.getElementsByTagName("body")[0];
 
+    // switch body style if menu is opened or closed
+    let body = document.getElementsByTagName("body")[0];
     if (isActive) body.style.overflow = "hidden";
-    else body.style.overflow = "auto";
+    else if (!isActive) body.style.overflow = "auto";
+
+    // switch body style if new URL is reached
+    (function (history) {
+      var pushState = history.pushState;
+      history.pushState = function (state) {
+        body.style.overflow = "auto";
+        return pushState.apply(history, arguments);
+      };
+    })(window.history);
   };
 
   return (
