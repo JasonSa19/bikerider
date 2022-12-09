@@ -10,6 +10,9 @@ nav {
   @media screen and (max-width: $xxl) {
     background-color: $secondary;
   }
+  @media screen and (max-width: $xxl) {
+    height: 120vh;
+  }
 
   &.nav-open {
     transform: translateX(0%);
@@ -22,6 +25,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 20rem;
+
+    @media screen and (max-width: $xl) {
+      gap: 10rem;
+      justify-content: flex-start;
+      margin-top: 20rem;
+    }
 
     a {
       text-transform: uppercase;
@@ -52,7 +61,7 @@ nav {
           font-size: 3.4rem;
         }
         @media screen and (max-width: $m) {
-          font-size: 2.8rem;
+          font-size: 2.2rem;
         }
       }
     }
