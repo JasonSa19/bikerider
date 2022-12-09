@@ -6,20 +6,21 @@ import Footer from "../components/globals/footer";
 import HeroSub from "../components/globals/herosub";
 
 // Needed Resources
-import image from "../images/layout/treffen.jpg";
+import image from "../images/layout/trainings.jpg";
 
-const Treffen = () => {
+const Shop = () => {
   return (
     <>
       <Header />
       <HeroSub
+        imgClass="object-top"
         heroSubImage={image}
-        heroSubImageAlt="Treffen"
-        heroSubHeadline="Treffen"
+        heroSubImageAlt="Trainings"
+        heroSubHeadline="Trainings"
       />
       <Footer />
     </>
   );
 };
 
-export default Treffen;
+export default Shop;
