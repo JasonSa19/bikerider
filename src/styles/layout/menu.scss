@@ -24,7 +24,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20rem;
+    gap: 15rem;
+    margin-top: 8rem;
 
     @media screen and (max-width: $xl) {
       gap: 10rem;

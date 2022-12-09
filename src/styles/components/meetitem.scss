@@ -35,6 +35,9 @@
       margin-bottom: -2.5rem;
       z-index: 999;
       position: relative;
+      @media screen and (max-width: $m) {
+        width: 15rem;
+      }
     }
 
     .meet-name {

@@ -33,7 +33,13 @@
         flex-direction: column-reverse;
         .text {
           padding: 0;
-          margin-top: 8rem;
+          margin-top: 0;
+        }
+      }
+
+      @media screen and (max-width: $xxl) {
+        .text {
+          padding-bottom: 5rem;
         }
       }
 
