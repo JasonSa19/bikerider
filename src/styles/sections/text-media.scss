@@ -3,16 +3,41 @@
   @include vertical-space;
   .text-media-wrap {
     display: flex;
+
     &.image-left {
       flex-direction: row;
+
+      @media screen and (max-width: $l) {
+        flex-direction: column;
+        .text {
+          padding: 0;
+          margin-top: 8rem;
+        }
+      }
+
       .foreground-image {
         left: 4rem;
+        @media screen and (max-width: $l) {
+          left: 1rem;
+        }
       }
     }
     &.image-right {
       flex-direction: row-reverse;
+
+      @media screen and (max-width: $l) {
+        flex-direction: column-reverse;
+        .text {
+          padding: 0;
+          margin-top: 8rem;
+        }
+      }
+
       .foreground-image {
         right: 4rem;
+        @media screen and (max-width: $l) {
+          right: 1rem;
+        }
       }
       .text {
         padding-left: 0;
@@ -21,12 +46,17 @@
     .media {
       flex: 0 0 50%;
       position: relative;
+
       img {
         width: 100%;
       }
+
       .foreground-image {
         top: 4rem;
         position: absolute;
+        @media screen and (max-width: $l) {
+          top: 1rem;
+        }
       }
     }
     .text {
