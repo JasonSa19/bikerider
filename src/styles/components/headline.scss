@@ -13,9 +13,10 @@
       background-color: $primary;
       width: 70%;
       margin-top: 1rem;
-    }
-    &.center-line {
-      margin: 0 auto;
+      &.center-line {
+        margin: 0 auto;
+        margin-top: 1rem;
+      }
     }
   }
 }
