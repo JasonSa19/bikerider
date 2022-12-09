@@ -1,6 +1,9 @@
 body {
   font-family: $main-font;
   font-size: 2rem;
+  @media screen and (max-width: $m) {
+    font-size: 1.6rem;
+  }
 }
 
 p {
