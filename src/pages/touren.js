@@ -8,8 +8,8 @@ import TextMedia from "../components/text-media/text-media";
 
 // Needed Resources
 import image from "../images/layout/touren.jpg";
-import mediaImage from "../images/layout/tourer.jpg";
-import mediaImageFilter from "../images/layout/tourer.jpg";
+import mediaImage from "../images/layout/Tourer.jpg";
+import mediaImageFilter from "../images/layout/Tourer_filter.jpg";
 
 const Touren = () => {
   return (
@@ -26,6 +26,7 @@ const Touren = () => {
         mediaImageFilter={mediaImageFilter}
         mediaImageAlt="Tourer"
         mediaImageFilterAlt="Tourer"
+        cstmClass="no-line"
         textContent="In unzähligen Kehren und Kurven schrauben Sie sich mit Ihrem Bike in die Höhen des südfranzösischen Hinterlandes, entlang schöner Küstenstraßen, überqueren Alpenpässe oder sind auf der Suche nach dem nächsten Insel-Highlight.
                     Die Resonanz auf unsere erste BikeRider Live-Tour war so umwerfend, dass es uns leicht fällt, dieses Programm für 2006 auszubauen. Denn, egal wo Motorradfahrer und BikeRider Live-Fans  zusammentreffen, sind Vergnügen und gute Stimmung angesagt."
       />

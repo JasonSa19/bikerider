@@ -9,6 +9,7 @@ const TextMedia = ({
   mediaImageAlt,
   textContent,
   hlContent,
+  cstmClass,
 }) => {
   return (
     <section className="text-media">
@@ -22,7 +23,7 @@ const TextMedia = ({
           <img class="foreground-image" alt={mediaImageAlt} src={mediaImage} />
         </div>
         <div className="text">
-          <Headline headlineContent={hlContent} />
+          <Headline cstmClass={cstmClass} headlineContent={hlContent} />
           <p>{textContent}</p>
         </div>
       </div>
