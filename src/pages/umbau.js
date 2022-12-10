@@ -6,7 +6,7 @@ import Footer from "../components/globals/footer";
 import HeroSub from "../components/hero-subpage/herosub";
 
 // Needed Resources
-import image from "../images/layout/trainings.jpg";
+import image from "../images/layout/umbauten.jpg";
 
 const Umbau = () => {
   return (
@@ -15,8 +15,8 @@ const Umbau = () => {
       <HeroSub
         imgClass="object-top"
         heroSubImage={image}
-        heroSubImageAlt="Trainings"
-        heroSubHeadline="Trainings"
+        heroSubImageAlt="An- und Umbau von A-Z"
+        heroSubHeadline="An- und Umbau von A-Z"
       />
       <Footer />
     </>
