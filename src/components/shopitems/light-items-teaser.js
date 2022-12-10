@@ -10,7 +10,7 @@ import lightSecondImg from "../../images/layout/licht.jpg";
 
 const LightItemsTeaser = () => {
   return (
-    <section className="shop-items-teaser">
+    <section id="beleuchtung" className="shop-items-teaser">
       <div className="shop-items-teaser-inner">
         <Headline headlineContent="Beleuchtung:" cstmClass="center-line" />
         <ShopItems
