@@ -12,6 +12,10 @@
 
     &-inner {
       @include flex-row;
+
+      @media screen and (max-width: $xl) {
+        flex-direction: column;
+      }
     }
 
     &-img {
@@ -31,6 +35,11 @@
       justify-content: flex-start;
       align-items: center;
       margin-left: 2.5rem;
+
+      @media screen and (max-width: $xl) {
+        margin-left: 2rem;
+        margin-top: 2rem;
+      }
 
       span {
         @include flex-column;
@@ -58,6 +67,12 @@
       align-items: flex-end;
       margin-left: auto;
       flex: 0 0 16%;
+
+      @media screen and (max-width: $xl) {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 2rem;
+      }
 
       &-cta {
         display: flex;
