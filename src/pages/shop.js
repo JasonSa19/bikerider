@@ -6,6 +6,7 @@ import Footer from "../components/globals/footer";
 import HeroShop from "../components/hero-shop/heroshop";
 import ShopTeaser from "../components/shop-teaser/shopteaser";
 import LightItemsTeaser from "../components/shopitems/light-items-teaser";
+import RastenItemsTeaser from "../components/shopitems/rasten-items-teaser";
 
 const Shop = () => {
   return (
@@ -14,6 +15,7 @@ const Shop = () => {
       <HeroShop />
       <ShopTeaser />
       <LightItemsTeaser />
+      <RastenItemsTeaser />
       <Footer />
     </>
   );
