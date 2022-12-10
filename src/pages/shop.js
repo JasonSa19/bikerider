@@ -3,21 +3,15 @@ import React from "react";
 // Needed Components
 import Header from "../components/globals/header";
 import Footer from "../components/globals/footer";
-import HeroSub from "../components/hero-subpage/herosub";
-
-// Needed Resources
-import image from "../images/layout/trainings.jpg";
+import HeroShop from "../components/hero-shop/heroshop";
+import ShopTeaser from "../components/shop-teaser/shopteaser";
 
 const Shop = () => {
   return (
     <>
       <Header />
-      <HeroSub
-        imgClass="object-top"
-        heroSubImage={image}
-        heroSubImageAlt="Trainings"
-        heroSubHeadline="Trainings"
-      />
+      <HeroShop />
+      <ShopTeaser />
       <Footer />
     </>
   );

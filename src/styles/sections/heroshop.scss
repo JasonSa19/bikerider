@@ -1,0 +1,12 @@
+.hero.shop {
+  .text-wrap {
+    p {
+      color: $light;
+      width: 45%;
+      margin-top: 2.5rem;
+      @media screen and (max-width: $xl) {
+        width: 100%;
+      }
+    }
+  }
+}

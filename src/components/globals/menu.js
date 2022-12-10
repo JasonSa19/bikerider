@@ -23,7 +23,7 @@ const Menu = ({ className }) => {
           <AnchorLink className="menu-item" to="/shop">
             Bikerider live-shop
           </AnchorLink>
-          <AnchorLink className="menu-item" to="/shop">
+          <AnchorLink className="menu-item" to="/umbau">
             Umbau-tipps von a bis z
           </AnchorLink>
         </div>
