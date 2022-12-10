@@ -7,6 +7,8 @@ import HeroShop from "../components/hero-shop/heroshop";
 import ShopTeaser from "../components/shop-teaser/shopteaser";
 import LightItemsTeaser from "../components/shopitems/light-items-teaser";
 import RastenItemsTeaser from "../components/shopitems/rasten-items-teaser";
+import LenkerItemsTeaser from "../components/shopitems/lenker-items-teaser";
+import BremsenItemsTeaser from "../components/shopitems/bremsen-items-teaser";
 
 const Shop = () => {
   return (
@@ -16,6 +18,8 @@ const Shop = () => {
       <ShopTeaser />
       <LightItemsTeaser />
       <RastenItemsTeaser />
+      <LenkerItemsTeaser />
+      <BremsenItemsTeaser />
       <Footer />
     </>
   );

@@ -9,7 +9,7 @@ import rastenFirstImg from "../../images/layout/verchromen.jpg";
 
 const RastenItemsTeaser = () => {
   return (
-    <section id="beleuchtung" className="shop-items-teaser">
+    <section id="rasten" className="shop-items-teaser">
       <div className="shop-items-teaser-inner">
         <Headline headlineContent="Rasten:" cstmClass="center-line" />
         <ShopItems

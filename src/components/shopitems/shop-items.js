@@ -3,9 +3,16 @@ import React from "react";
 import ctaSvgCart from "../../images/layout/shopping-cart.svg";
 import ctaSvgHeart from "../../images/layout/herz.svg";
 
-const ShopItems = ({ image, prodName, prodDesc, prodNmbr, prodPrice }) => {
+const ShopItems = ({
+  image,
+  prodName,
+  prodDesc,
+  prodNmbr,
+  prodPrice,
+  customClass,
+}) => {
   return (
-    <section className="shop-item">
+    <section className={customClass + " shop-item"}>
       <div className="shop-item-inner">
         <div className="shop-item-img">
           <img alt={prodName} src={image} />
