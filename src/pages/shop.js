@@ -16,10 +16,12 @@ const Shop = () => {
       <Header />
       <HeroShop />
       <ShopTeaser />
-      <LightItemsTeaser />
-      <RastenItemsTeaser />
-      <LenkerItemsTeaser />
-      <BremsenItemsTeaser />
+      <div className="item-teasers">
+        <LightItemsTeaser />
+        <RastenItemsTeaser />
+        <LenkerItemsTeaser />
+        <BremsenItemsTeaser />
+      </div>
       <Footer />
     </>
   );

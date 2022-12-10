@@ -1,116 +1,125 @@
-.shop-items-teaser {
-  @include inner-container;
-
-  .headline-wrap {
-    display: flex;
-    justify-content: center;
-  }
-
-  .shop-item {
-    box-shadow: $shadow;
-    margin-bottom: 5rem;
-    height: 20rem;
-
-    @media screen and (max-width: $xl) {
-      height: auto;
-    }
-
-    &.extra-height {
-      height: 30rem;
-    }
-
-    &-inner {
-      @include flex-row;
-      height: 100%;
+.item-teasers {
+  @include vertical-space;
+  .shop-items-teaser {
+    @include inner-container;
+    &:not(:first-of-type) {
+      padding-top: 8rem;
 
       @media screen and (max-width: $xl) {
-        flex-direction: column;
+        padding-top: 4rem;
       }
     }
-
-    &-img {
-      height: 100%;
-      flex: 0 0 38%;
-
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: top;
-      }
-    }
-
-    &-text {
+    .headline-wrap {
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-left: 2.5rem;
+      justify-content: center;
+    }
+
+    .shop-item {
+      box-shadow: $shadow;
+      margin-bottom: 5rem;
+      height: 20rem;
 
       @media screen and (max-width: $xl) {
-        margin-left: 2rem;
-        margin-top: 2rem;
+        height: auto;
       }
 
-      span {
-        @include flex-column;
-        justify-content: center;
-        align-items: flex-start;
+      &.extra-height {
+        height: 30rem;
+      }
 
-        strong {
-          font-weight: 500;
-          margin-bottom: 1rem;
+      &-inner {
+        @include flex-row;
+        height: 100%;
+
+        @media screen and (max-width: $xl) {
+          flex-direction: column;
         }
       }
-    }
 
-    &-number {
-      text-align: right;
-      margin-top: 1rem;
-      margin-right: 1rem;
-      font-size: 1.6rem;
-      font-weight: 300;
-    }
+      &-img {
+        height: 100%;
+        flex: 0 0 38%;
 
-    &-info {
-      @include flex-column;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin-left: auto;
-      flex: 0 0 16%;
-
-      @media screen and (max-width: $xl) {
-        flex-direction: row;
-        align-items: center;
-        margin-left: 2rem;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
       }
 
-      &-cta {
+      &-text {
         display: flex;
+        justify-content: flex-start;
         align-items: center;
-        gap: 1.5rem;
+        margin-left: 2.5rem;
 
-        .item-price {
-          font-size: 2.7rem;
-          font-weight: 500;
+        @media screen and (max-width: $xl) {
+          margin-left: 2rem;
+          margin-top: 2rem;
         }
 
-        .cta-buttons {
+        span {
           @include flex-column;
-          gap: 2px;
+          justify-content: center;
+          align-items: flex-start;
 
-          .item-cta {
-            padding: 1.5rem;
-            border: none;
-            background-color: $primary;
-            transition: $transition;
-            cursor: pointer;
+          strong {
+            font-weight: 500;
+            margin-bottom: 1rem;
+          }
+        }
+      }
 
-            img {
-              width: 3rem;
-              height: 3rem;
-            }
-            &:hover {
-              background-color: $secondary;
+      &-number {
+        text-align: right;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+
+      &-info {
+        @include flex-column;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-left: auto;
+        flex: 0 0 16%;
+
+        @media screen and (max-width: $xl) {
+          flex-direction: row;
+          align-items: center;
+          margin-left: 2rem;
+        }
+
+        &-cta {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+
+          .item-price {
+            font-size: 2.7rem;
+            font-weight: 500;
+          }
+
+          .cta-buttons {
+            @include flex-column;
+            gap: 2px;
+
+            .item-cta {
+              padding: 1.5rem;
+              border: none;
+              background-color: $primary;
+              transition: $transition;
+              cursor: pointer;
+
+              img {
+                width: 3rem;
+                height: 3rem;
+              }
+              &:hover {
+                background-color: $secondary;
+              }
             }
           }
         }
