@@ -1,0 +1,60 @@
+.shop-items-teaser {
+  @include inner-container;
+  .shop-item {
+    box-shadow: $shadow;
+    margin-bottom: 5rem;
+    &-inner {
+      @include flex-row;
+    }
+    &-img {
+      img {
+        height: 20rem;
+      }
+    }
+    &-text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      span {
+        @include flex-column;
+        justify-content: center;
+        align-items: start;
+      }
+    }
+    &-info {
+      @include flex-column;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-left: auto;
+
+      &-cta {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        .cta-buttons {
+          @include flex-column;
+          gap: 2px;
+
+          .item-cta {
+            padding: 1.5rem;
+            border: none;
+            background-color: $primary;
+            transition: $transition;
+            cursor: pointer;
+            img {
+              width: 3rem;
+              height: 3rem;
+            }
+            &:hover {
+              background-color: $secondary;
+            }
+            .item-price {
+              font-size: 2.7rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

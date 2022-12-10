@@ -1,5 +1,8 @@
 import React from "react";
 
+import ctaSvgCart from "../../images/layout/shopping-cart.svg";
+import ctaSvgHeart from "../../images/layout/herz.svg";
+
 const ShopItems = ({ image, prodName, prodDesc, prodNmbr, prodPrice }) => {
   return (
     <section className="shop-item">
@@ -16,9 +19,15 @@ const ShopItems = ({ image, prodName, prodDesc, prodNmbr, prodPrice }) => {
         <div className="shop-item-info ">
           <span className="shop-item-number">{prodNmbr}</span>
           <div className="shop-item-info-cta">
-            <span>{prodPrice}</span>
-            <div className="item-cta"></div>
-            <div className="item-cta"></div>
+            <span className="item-price">{prodPrice}</span>
+            <div className="cta-buttons">
+              <button className="item-cta">
+                <img src={ctaSvgCart} alt="Einkaufskorb" />
+              </button>
+              <button className="item-cta">
+                <img src={ctaSvgHeart} alt="Herz" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
