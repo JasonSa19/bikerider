@@ -25,6 +25,9 @@
 
       &.extra-height {
         height: 30rem;
+        @media screen and (max-width: $xl) {
+          height: auto;
+        }
       }
 
       &-inner {
@@ -105,6 +108,9 @@
           .cta-buttons {
             @include flex-column;
             gap: 2px;
+            @media screen and (max-width: $xl) {
+              gap: 1px;
+            }
 
             .item-cta {
               padding: 1.5rem;
