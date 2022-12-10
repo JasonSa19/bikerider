@@ -1,36 +1,74 @@
 .shop-items-teaser {
   @include inner-container;
+
+  .headline-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
   .shop-item {
     box-shadow: $shadow;
     margin-bottom: 5rem;
+
     &-inner {
       @include flex-row;
     }
+
     &-img {
+      height: 20rem;
+      flex: 0 0 38%;
+
       img {
-        height: 20rem;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
       }
     }
+
     &-text {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      margin-left: 2.5rem;
+
       span {
         @include flex-column;
         justify-content: center;
-        align-items: start;
+        align-items: flex-start;
+
+        strong {
+          font-weight: 500;
+          margin-bottom: 1rem;
+        }
       }
     }
+
+    &-number {
+      text-align: right;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+
     &-info {
       @include flex-column;
       justify-content: space-between;
       align-items: flex-end;
       margin-left: auto;
+      flex: 0 0 16%;
 
       &-cta {
         display: flex;
         align-items: center;
         gap: 1.5rem;
+
+        .item-price {
+          font-size: 2.7rem;
+          font-weight: 500;
+        }
+
         .cta-buttons {
           @include flex-column;
           gap: 2px;
@@ -41,16 +79,13 @@
             background-color: $primary;
             transition: $transition;
             cursor: pointer;
+
             img {
               width: 3rem;
               height: 3rem;
             }
             &:hover {
               background-color: $secondary;
-            }
-            .item-price {
-              font-size: 2.7rem;
-              font-weight: 500;
             }
           }
         }

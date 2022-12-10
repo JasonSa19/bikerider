@@ -12,7 +12,7 @@ const LightItemsTeaser = () => {
   return (
     <section className="shop-items-teaser">
       <div className="shop-items-teaser-inner">
-        <Headline headlineContent="Beleuchtung" cstmClass="center-line" />
+        <Headline headlineContent="Beleuchtung:" cstmClass="center-line" />
         <ShopItems
           image={lightFirstImg}
           prodName="Cat-Eye Rücklicht auf Halter"
