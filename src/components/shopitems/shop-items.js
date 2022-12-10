@@ -13,7 +13,7 @@ const ShopItems = ({ image, prodName, prodDesc, prodNmbr, prodPrice }) => {
             <p>{prodDesc}</p>
           </span>
         </div>
-        <div className="shop-item-info">
+        <div className="shop-item-info ">
           <span className="shop-item-number">{prodNmbr}</span>
           <div className="shop-item-info-cta">
             <span>{prodPrice}</span>

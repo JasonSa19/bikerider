@@ -3,7 +3,7 @@ import React from "react";
 import Headline from "../headline";
 import ShopItems from "./shop-items";
 
-const ShopItemsTeaser = () => {
+const LightItemsTeaser = () => {
   return (
     <section className="shop-items-teaser">
       <div className="shop-items-teaser-inner">
@@ -20,4 +20,4 @@ const ShopItemsTeaser = () => {
   );
 };
 
-export default ShopItemsTeaser;
+export default LightItemsTeaser;
