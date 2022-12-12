@@ -1,0 +1,102 @@
+.info-section-imprint {
+  position: relative;
+  .info {
+    @include flex-row;
+    @include container;
+
+    @media screen and (max-width: $xxl) {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    &-text {
+      @include vertical-space;
+      @include flex-column;
+      gap: 4rem;
+
+      @media screen and (max-width: $xxl) {
+        padding-left: 5%;
+      }
+
+      span {
+        line-height: 160%;
+        font-weight: 300;
+
+        strong {
+          font-weight: 500;
+        }
+      }
+
+      .contact-information {
+        @include flex-row;
+        gap: 8rem;
+
+        @media screen and (max-width: $l) {
+          @include flex-column;
+        }
+      }
+    }
+    &-logo {
+      background-color: $secondary;
+      position: absolute;
+      right: 0;
+      padding: 0 10rem;
+      height: 100%;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .info-logo-inner {
+        width: 45rem;
+
+        @media screen and (max-width: $xxl) {
+          width: 25rem;
+        }
+      }
+
+      @media screen and (max-width: $xxl) {
+        justify-content: start;
+        position: relative;
+        padding: 7rem 0;
+        width: 100%;
+        padding-left: 5%;
+      }
+
+      @media screen and (max-width: $m) {
+        flex-direction: column;
+      }
+
+      &-col {
+        @include flex-column;
+        justify-content: center;
+        gap: 7.8rem;
+        &-cell {
+          @include flex-row;
+          align-items: center;
+          gap: 1rem;
+
+          span,
+          a {
+            color: $light;
+            text-decoration: none;
+            font-weight: 300;
+          }
+
+          .img-wrap {
+            background-color: $primary;
+            width: 7.5rem;
+            height: 7.5rem;
+            @include flex-row;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 4.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
