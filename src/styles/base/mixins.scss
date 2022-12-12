@@ -8,7 +8,7 @@
 @mixin container {
   max-width: $boxed;
   margin: 0 auto;
-  @media screen and (max-width: $xxxl) {
+  @media screen and (max-width: $max-xl) {
     max-width: 90%;
   }
 }
