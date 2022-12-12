@@ -1,0 +1,94 @@
+.info-section {
+  position: relative;
+  .info {
+    @include flex-row;
+    @include container;
+
+    @media screen and (max-width: $xxl) {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    &-text {
+      @include flex-row;
+      @include vertical-space;
+      flex-wrap: wrap;
+      flex: 0 0 50%;
+      row-gap: 4rem;
+
+      @media screen and (max-width: $xxl) {
+        padding-left: 5%;
+      }
+
+      span {
+        flex: 0 0 45%;
+        line-height: 160%;
+        font-weight: 300;
+
+        @media screen and (max-width: $l) {
+          flex: 0 0 100%;
+        }
+        strong {
+          font-weight: 500;
+        }
+        &:last-of-type {
+          flex: 0 0 100%;
+        }
+      }
+    }
+    &-icons {
+      @include flex-row;
+      background-color: $secondary;
+      gap: 9rem;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      padding: 0 10rem;
+      height: 100%;
+      width: 40%;
+
+      @media screen and (max-width: $xxl) {
+        justify-content: start;
+        position: relative;
+        padding: 7rem 0;
+        width: 100%;
+        padding-left: 5%;
+      }
+
+      @media screen and (max-width: $m) {
+        flex-direction: column;
+      }
+
+      &-col {
+        @include flex-column;
+        justify-content: center;
+        gap: 7.8rem;
+        &-cell {
+          @include flex-row;
+          align-items: center;
+          gap: 1rem;
+
+          span,
+          a {
+            color: $light;
+            text-decoration: none;
+            font-weight: 300;
+          }
+
+          .img-wrap {
+            background-color: $primary;
+            width: 7.5rem;
+            height: 7.5rem;
+            @include flex-row;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 4.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
