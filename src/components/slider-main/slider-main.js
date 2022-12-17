@@ -72,7 +72,7 @@ const Slidermain = () => {
     ],
   };
   return (
-    <section className="slider-main">
+    <section id="leistungen" className="slider-main">
       <Headline headlineContent="Leistungen" cstmClass="center-line" />
       <div className="slider-wrap">
         <Slider {...settings}>

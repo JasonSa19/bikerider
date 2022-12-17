@@ -8,9 +8,9 @@ const Menu = ({ className }) => {
     <nav className={className}>
       <div className="menu-wrapper">
         <div className="primary-menu">
-          <AnchorLink className="menu-item" to="#leistungen">
+          <a href="/#leistungen" className="menu-item">
             Leistungen
-          </AnchorLink>
+          </a>
           <AnchorLink className="menu-item" to="/touren">
             Touren
           </AnchorLink>
